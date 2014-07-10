@@ -129,8 +129,8 @@ Fonte: Adoro Cinema (http://www.adorocinema.com/filmes/filme-210042/)')})
 cultura.push({:t=>'A Culpa é das Estrelas (EUA, 2014) ★★★★', :c=>br('Diagnosticada com câncer, a adolescente Hazel Grace Lancaster (Shailene Woodley) se mantém viva graças a uma droga experimental. Após passar anos lutando com a doença, ela é forçada pelos pais a participar de um grupo de apoio cristão. Lá, conhece Augustus Waters (Ansel Elgort), um rapaz que também sofre com câncer. Os dois possuem visões muito diferentes de suas doenças: Hazel preocupa-se apenas com a dor que poderá causar aos outros, já Augustus sonha em deixar a sua própria marca no mundo. Apesar das diferenças, eles se apaixonam. Juntos, atravessam os principais conflitos da adolescência e do primeiro amor, enquanto lutam para se manter otimistas e fortes um para o outro.
 Fonte: Adoro Cinema (http://www.adorocinema.com/filmes/filme-218926/)')})
 
-cultura.push({:t=>"<h2>Balada light</h2>", :c=>""})
-cultura.push({:t=>'Fan Fest da Final, vamos cair no samba!', :c=>br('Neste 13/07 (domingo) - Bereguedê, Folia Mamulengo, Lacto Samba, Alex Costa e Ju Moraes irão animar o Farol da Barra.
+cultura.push({:t=>"<h2>SAIDEIRA DA COPA</h2>", :c=>""})
+cultura.push({:t=>'Fan Fest da Final, para cair no samba!', :c=>br('Neste 13/07 (domingo) - Bereguedê, Folia Mamulengo, Lacto Samba, Alex Costa e Ju Moraes irão animar o Farol da Barra.
  Final Argentina X Alemanha às 16:00hs.')})
 
 expediente = Array.new
@@ -145,12 +145,12 @@ File.write("#{Dir.pwd}/pre.html", output)
 premailer = Premailer.new("#{Dir.pwd}/pre.html", :warn_level => Premailer::Warnings::SAFE)
 
 # Write the HTML output
-File.open("#{Dir.pwd}/out.html", "w") do |fout|
+File.open("#{Dir.pwd}/output.html", "w") do |fout|
   fout.puts premailer.to_inline_css
 end
 
 # Write the plain-text output
-#File.open("#{Dir.pwd}/out.txt", "w") do |fout|
+#File.open("#{Dir.pwd}/output.txt", "w") do |fout|
 #  fout.puts premailer.to_plain_text
 #end
 
@@ -159,4 +159,5 @@ premailer.warnings.each do |w|
   puts "#{w[:message]} (#{w[:level]}) may not render properly in #{w[:clients]}"
 end
 
-exec("firefox #{Dir.pwd}/out.html")
+FileUtils.rm("#{Dir.pwd}/pre.html")
+exec("firefox #{Dir.pwd}/output.html")
