@@ -114,19 +114,24 @@ feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none
 pessoas.push({:t=>"", :c=>feriasImg})
 pessoas.push({:t=>"", :c=>buildLeave("julho", leaveData)})
 
-
 cultura = Array.new
 cultura.push({:t=>"<h2>SESSÃO PIPOCA</h2>", :c=>""})
 
-cultura.push({:t=>'Eu e Você ("Io e Te", Itália, 2012)', :c=>br('Sinopse: Escondido no porão para passar suas férias de inverno, Lorenzo, um jovem de quatorze anos, introvertido e um pouco neurótico, está se preparando para viver seu grande sonho: nada de conflitos, nada de colegas chatos de classe, nada de brincadeiras e falsidades. O mundo lá fora com suas regras incompreensíveis e ele deitado no sofá, bebendo muita coca-cola, comendo atum em caixinha e com livros de terror ao seu redor. Será Olivia, que chega de repente no porão com sua agressiva vitalidade, a tirar Lorenzo de seu universo sombrio, para que ele tire a máscara de adolescente complicado e aceite o jogo caótico da vida fora de quatro paredes. Dirigido por Bernardo Bertolucci.
+cultura.push({:t=>'Eu e Você ("Io e Te", Itália, 2012) ★★★★', :c=>br('Sinopse: Escondido no porão para passar suas férias de inverno, Lorenzo, um jovem de quatorze anos, introvertido e um pouco neurótico, está se preparando para viver seu grande sonho: nada de conflitos, nada de colegas chatos de classe, nada de brincadeiras e falsidades. O mundo lá fora com suas regras incompreensíveis e ele deitado no sofá, bebendo muita coca-cola, comendo atum em caixinha e com livros de terror ao seu redor. Será Olivia, que chega de repente no porão com sua agressiva vitalidade, a tirar Lorenzo de seu universo sombrio, para que ele tire a máscara de adolescente complicado e aceite o jogo caótico da vida fora de quatro paredes. Dirigido por Bernardo Bertolucci.
 Fonte: Blog "Eu e a Telona" (http://eueatelona.blogspot.com.br/2013/10/eu-e-voce-io-e-te-2012.html)')})
 
-cultura.push({:t=>'Taxi Driver (EUA, 1976)', :c=>br('Sinopse: Em Nova York, um homem de 26 anos (Robert De Niro), veterano da Guerra do Vietnã, é um solitário no meio da grande metrópole que ele vagueia noite adentro. Assim começa a trabalhar como motorista de taxi no turno da noite e nele vai crescendo um sentimento de revolta pela miséria, o vício, a violência e a prostituição que estão sempre à sua volta. Após comprar armas, ele articula um atentado contra o senador (que planeja ser presidente). Dirigido por Martin Scorsese.
+cultura.push({:t=>'Taxi Driver (EUA, 1976) ★★★★', :c=>br('Sinopse: Em Nova York, um homem de 26 anos (Robert De Niro), veterano da Guerra do Vietnã, é um solitário no meio da grande metrópole que ele vagueia noite adentro. Assim começa a trabalhar como motorista de taxi no turno da noite e nele vai crescendo um sentimento de revolta pela miséria, o vício, a violência e a prostituição que estão sempre à sua volta. Após comprar armas, ele articula um atentado contra o senador (que planeja ser presidente). Dirigido por Martin Scorsese.
 Fonte: Blog "Eu e a Telona" (http://eueatelona.blogspot.com.br/2014/06/taxi-driver-eua-1976.html)')})
 
-cultura.push({:t=>'Bad Words (EUA, 2013)', :c=>br('Guy Trilby (Jason Bateman) é um adulto frustrado, que nunca venceu os concursos para soletrar palavras quando era pequeno. No entanto, já adulto, ele descobre uma brecha no regulamento permitindo que ele concorra contra as crianças de 10 anos de idade. Agora, contra a vontade de todos os participantes, Guy terá uma segunda oportunidade de levar o troféu.
+cultura.push({:t=>'Bad Words (EUA, 2013) ★★★★', :c=>br('Guy Trilby (Jason Bateman) é um adulto frustrado, que nunca venceu os concursos para soletrar palavras quando era pequeno. No entanto, já adulto, ele descobre uma brecha no regulamento permitindo que ele concorra contra as crianças de 10 anos de idade. Agora, contra a vontade de todos os participantes, Guy terá uma segunda oportunidade de levar o troféu.
 Fonte: Adoro Cinema (http://www.adorocinema.com/filmes/filme-210042/)')})
 
+cultura.push({:t=>'A Culpa é das Estrelas (EUA, 2014) ★★★★', :c=>br('Diagnosticada com câncer, a adolescente Hazel Grace Lancaster (Shailene Woodley) se mantém viva graças a uma droga experimental. Após passar anos lutando com a doença, ela é forçada pelos pais a participar de um grupo de apoio cristão. Lá, conhece Augustus Waters (Ansel Elgort), um rapaz que também sofre com câncer. Os dois possuem visões muito diferentes de suas doenças: Hazel preocupa-se apenas com a dor que poderá causar aos outros, já Augustus sonha em deixar a sua própria marca no mundo. Apesar das diferenças, eles se apaixonam. Juntos, atravessam os principais conflitos da adolescência e do primeiro amor, enquanto lutam para se manter otimistas e fortes um para o outro.
+Fonte: Adoro Cinema (http://www.adorocinema.com/filmes/filme-218926/)')})
+
+cultura.push({:t=>"<h2>Balada light</h2>", :c=>""})
+cultura.push({:t=>'Fan Fest da Final, vamos cair no samba!', :c=>br('Neste 13/07 (domingo) - Bereguedê, Folia Mamulengo, Lacto Samba, Alex Costa e Ju Moraes irão animar o Farol da Barra.
+ Final Argentina X Alemanha às 16:00hs.')})
 
 expediente = Array.new
 expediente.push({:t=>"Expediente"})
@@ -136,19 +141,16 @@ expediente.push({:k=>"DE Cultura", :v=>"Vanderlei & Evandro"})
 
 renderer = ERB.new(contents)
 puts output = renderer.result()
-File.write("#{Dir.pwd}/boletim.html", output)
-
-FileUtils.copy("#{Dir.pwd}/boletim.html", "/var/www/boletim.html")
-
-premailer = Premailer.new('http://localhost/boletim.html', :warn_level => Premailer::Warnings::SAFE)
+File.write("#{Dir.pwd}/pre.html", output)
+premailer = Premailer.new("#{Dir.pwd}/pre.html", :warn_level => Premailer::Warnings::SAFE)
 
 # Write the HTML output
-File.open("#{Dir.pwd}/output.html", "w") do |fout|
+File.open("#{Dir.pwd}/out.html", "w") do |fout|
   fout.puts premailer.to_inline_css
 end
 
 # Write the plain-text output
-#File.open("#{Dir.pwd}/output.txt", "w") do |fout|
+#File.open("#{Dir.pwd}/out.txt", "w") do |fout|
 #  fout.puts premailer.to_plain_text
 #end
 
@@ -157,4 +159,4 @@ premailer.warnings.each do |w|
   puts "#{w[:message]} (#{w[:level]}) may not render properly in #{w[:clients]}"
 end
 
-exec("firefox #{Dir.pwd}/output.html")
+exec("firefox #{Dir.pwd}/out.html")
