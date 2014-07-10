@@ -28,11 +28,10 @@ p {
 <table width="600px">
   <tr>
     <td>
-
 <h1>Boletim Informativo DESDR</h1>
 <p>Salvador, <%= DateTime.now.strftime('%d/%m/%Y') %> - Boletim Informativo DESDR<p>
 <img title="Boletim" src="http://publicaintra7.serpro/clientes/supde/supde/cabecalho.png" alt="Boletim" />
-
+<!-- Editorial -->
   <% 
       s=""
       editorial.each { |p|  
@@ -47,6 +46,7 @@ p {
   <% end %>
 <BR>
 <BR>
+<!-- Fim Editorial -->
 <p>*Boa leitura, aproveitem e contribuam por meio do e-mail:<BR>lista-comunicacao-desdr@grupos.serpro.gov.br!</p>
 <BR>
 <BR>
