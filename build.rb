@@ -30,10 +30,25 @@ realizacoes=""
 viagens=""
 novidades=""
 
+#REALIZAÇÕES: vai para DE Serviço
+
+
+
+#LOGÍSTICO: 
+#Visite o ambiente do Sinor
+#11 de julho de 2014
+#Conheça mais a sua empresa acessando o Sistema de Informações Normativas e Organizacionais - Sinor.
+#O Sistema apoia o processo decisório em todos os níveis hierárquicos, trazendo documentos e informações arquivadas de forma organizada, que possam ser recuperadas com facilidade e compartilhadas com todos os empregados.
+#A solução traz documentos e informações que influenciam o funcionamento do Serpro. São deliberações, decisões de diretoria, decisões setoriais, normas e descrições de atribuições e competências.
+
+
 editorial = Array.new
-editorialTexto = br("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-Sed consequat, leo eget bibendum sodales, augue velit cursus nunc")
-editorial.push({:t=>"Existe vida após a copa!", :c=>editorialTexto})
+editorialTexto = br("Vocês devem ter visto no Primeira Leitura, algo que está mexendo com toda a empresa, e agora tem o patrocínio da alta Direção. Um grupo designado pela Diretoria, com representantes de todas as áreas, está reunido há quase duas semanas discutindo, traçando estratégias e encaminhando ações para que a empresa passe a adotar a metodologia ágil. O caminho é longo, a mudança é gradativa, nossa pluralidade exigirá equilíbrio e adaptações, mas todo o investimento será recompensado, pois esse movimento não significa apenas um novo processo de trabalho, significa, entre outras coisas, algo muito maior - transformação de cultura!
+
+Passaremos por um processo de mudança em que, naturalmente, algumas pessoas se adaptarão mais facilmente do que outras, alguns demonstrarão maior disposição, outros mais preocupação, mas estaremos juntos, como um único time, se ajudando frente aos novos desafios!
+
+Devemos ter mais informações em breve.")
+editorial.push({:t=>"", :c=>editorialTexto})
   
 homologacoes=br("SIGEPE-GED-AFD - Validação
 Data: 07/07/2014
@@ -138,6 +153,7 @@ expediente.push({:t=>"Expediente"})
 expediente.push({:k=>"Diretora Editorial", :v=>"Vileide"})
 expediente.push({:k=>"Diagramação e Programação", :v=>"Evandro"})
 expediente.push({:k=>"DE Cultura", :v=>"Vanderlei & Evandro"})
+expediente.push({:k=>"Editorial", :v=>"Lívia Embiruçu & Eduardo Tourinho"})
 
 renderer = ERB.new(contents)
 puts output = renderer.result()
