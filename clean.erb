@@ -36,7 +36,7 @@ p {
 <h1>Boletim Informativo DESDR</h1>
 <p>Salvador, <%= DateTime.now.strftime('%d/%m/%Y') %> - Boletim Informativo DESDR<p>
 <img title="Boletim" class="imgLinha" src="http://publicaintra7.serpro/clientes/supde/supde/cabecalho.png" alt="Boletim" />
-<BR>
+<br>
 <!-- Editorial -->
   <% 
       s=""
@@ -50,141 +50,104 @@ p {
   <% if !s.empty? %>
     <%=  s %>
   <% end %>
-<BR>
+<br>
 <!-- Fim Editorial -->
 <p>*Boa leitura, aproveitem e contribuam por meio do e-mail: <a href="mailto:lista-comunicacao-desdr@grupos.serpro.gov.br">lista-comunicacao-desdr@grupos.serpro.gov.br</a>!</p>
-<BR>
-<BR>
+<br>
+<br>
 
 <!--De Serviços-->
-  <!-- Homologações-->
-
-<img class="imgServico" title="De Serviços" src="http://publicaintra7.serpro/clientes/supde/supde/de_servicos.png" alt="De Serviços" />
-<br>
-<BR>
-<img class="imgLinha"   src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha" />
-<br>
-<BR>
-
-<% if ! homologacoes.empty? %>
-<div align="center">
-  <img width="50%" style="-webkit-user-select: none" src="http://www.bitmag.com.br/wp-content/uploads/2014/02/handshake2-e1391532145911.jpg">
-</div>  
-<BR>
-<BR>
-  <h2>HOMOLOGAÇÕES:</h2>
-  <BR>
-  <p><%= homologacoes %></p>
-  <BR>
-  <BR>
-<% end %>
-
-  <!--Fim Homologações-->
-  
-  <h2>LOGÍSTICO:</h2>
-  <BR>
-  Visite o ambiente do Sinor
-    <BR>
-    <BR>
-11 de julho de 2014
-<BR>
-<p>Conheça mais a sua empresa acessando o <a target="_blank" href="http://sinor.portalcorporativo.serpro/">Sistema de Informações Normativas e Organizacionais - Sinor</a>.
-
-O Sistema apoia o processo decisório em todos os níveis hierárquicos, trazendo documentos e informações arquivadas de forma organizada, que possam ser recuperadas com facilidade e compartilhadas com todos os empregados.
-A solução traz documentos e informações que influenciam o funcionamento do Serpro. São deliberações, decisões de diretoria, decisões setoriais, normas e descrições de atribuições e competências.
-</p>
-  <BR>
-  <BR>  
-  
-
-  
-  
-  
+<%  if ! servicos.empty? %>
+  <img class="imgServico" title="De Serviços" src="http://publicaintra7.serpro/clientes/supde/supde/de_servicos.png" alt="De Serviços" />
+  <br><br>
+  <img class="imgLinha"   src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha" />
+  <br><br>
+  <% s=""
+      servicos.each { |p|  
+        s+="<h2>#{p[:t]}</h2>
+        <br>
+        <p>#{p[:c]}</p>
+        <br><br>
+      "}
+  %>
+  <%= s if !s.empty? %>
+<% end %>  
   
 <!--Fim De Serviços-->
 
 <!--DE Eventos-->
 
 <img  title="De Eventos" src="http://publicaintra7.serpro/clientes/supde/supde/de_eventos.png" alt="De frente">
-<BR>
-<BR>
+<br>
+<br>
 <img class="imgLinha" title="Linha" src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha">
-<BR>
-<BR>
+<br>
+<br>
 <% if ! reunioes.empty? %>
   <h2>REUNIÕES:</h2>
-  <BR>
+  <br>
   <p><%= reunioes %></p>
-  <BR>
-  <BR>
+  <br>
+  <br>
 <% end %>
 
 <% if ! realizacoes.empty? %>
   <h2>REALIZAÇÕES:</h2>
-  <BR>
+  <br>
   <p><%= realizacoes %></p>
-  <BR>
-  <BR>
+  <br>
+  <br>
 <% end %>
-  
-  
-  
 
 
 <% if ! viagens.empty? %>
 <div align="center">
   <img src="http://voce.serpro/articles/0106/3007/images6.jpeg" width="30%">
 </div>  
-  <BR>
-  <BR>
+  <br>
+  <br>
   <h2>VIAGENS:</h2>
-  <BR>
+  <br>
   <p><%= viagens %></p>
-  <BR>
-  <BR>
-  <BR>
+  <br>
+  <br>
+  <br>
 <% end %>
   
 <!-- FIM DE Eventos -->  
 
 <img  title="De Serviços" src="http://publicaintra7.serpro/clientes/supde/supde/de_mudancas.png"  />
 <br>
-<BR>
+<br>
 <img class="imgLinha"   src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha" />
 <br>
-<BR>
+<br>
 <h2>Novos integrantes para Equipe DE507 e DE508</h2>
 
 
-  <BR>
+  <br>
   <p>Informamos a todos que, desde o dia 03 de julho, Mario Resende passou a integrar a equipe DE508 e Alex Cesar DE507. A equipe DE505 agradece o convívio e as contribuições durante o período que integrou o setor. Desejamos sucesso nas novas atividades!</p>
-  <BR>
-  <BR>
-
+  <br>
+  <br>
 
 <!-- DE Pessoas -->  
+<%  if !pessoas.empty? %>
   <img  title="De Pessoas" src="http://publicaintra7.serpro/clientes/supde/supde/de_pessoas.png" alt="De Pessoas">
-  <br>
-  <br>
+  <br><br>
   <img class="imgLinha"  title="Linha" src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha">
-  <br>
-  <br>
-  <% 
-      s=""
+  <br><br>
+  <% s=""
       pessoas.each { |p|  
-      s+="    
-      <h2>#{p[:t]}</h2>
-      <BR>
+      s+="<h2>#{p[:t]}</h2>
+      <br>
       <p>#{p[:c]}</p>
-      <BR>
-      <BR>
-      "
-    }
+      <br><br>
+      "}
   %>
-  <% if !s.empty? %>
-    <%=  s %>
-  <% end %>
+  <%= s if !s.empty? %>
+<% end %>  
 <!-- FIM DE Pessoas --> 
+
 <!-- DE Cultura --> 
 
 <% if !cultura.empty? %>
@@ -193,10 +156,10 @@ A solução traz documentos e informações que influenciam o funcionamento do S
   <img src="http://voce.serpro/articles/0106/3200/SessaoPipoca.jpg" alt="" width="200" style="">
 </div>
 <img src="http://voce.serpro/articles/0106/3198/de_cultura.png" alt="">
-<BR>
+<br>
 <img class="imgLinha"  src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" >
-<BR>
-<BR>
+<br>
+<br>
   <% 
       s=""
       cultura.each { |p|  
@@ -205,7 +168,7 @@ A solução traz documentos e informações que influenciam o funcionamento do S
             <h3>#{p[:t]}</h3> " if ! p[:t].empty?
           c = "<p>#{p[:c]}</p>" if ! p[:c].empty?
           s+= t + c 
-          s+="<div align='center'>=======</div><BR>" if ! p[:c].empty?
+          s+="<div align='center'>=======</div><br>" if ! p[:c].empty?
     }
   %>
   <% if !s.empty? %>

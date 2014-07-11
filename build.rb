@@ -49,7 +49,16 @@ Passaremos por um processo de mudança em que, naturalmente, algumas pessoas se 
 
 Devemos ter mais informações em breve.")
 editorial.push({:t=>"", :c=>editorialTexto})
-  
+
+
+servicos = Array.new
+servicos.push({:t=>"", :c=>'
+<div align="center">
+  <img width="50%" style="-webkit-user-select: none" src="http://www.bitmag.com.br/wp-content/uploads/2014/02/handshake2-e1391532145911.jpg">
+</div><br><br>
+'})
+
+
 homologacoes=br("SIGEPE-GED-AFD - Validação
 Data: 07/07/2014
 Objetivo: Validar a iteração 4 do SIGEPE-GED-AFD
@@ -69,6 +78,23 @@ PGDITR - Equipe DE509
 Período: 21 a 25/07/2014.
 Objetivo: Homologar o PGDITR 2014
 Responsável: Taise")
+
+servicos.push({:t=>"HOMOLOGAÇÕES:", :c=>homologacoes})
+
+logisticoTxt='Visite o ambiente do Sinor
+
+11 de julho de 2014
+
+Conheça mais a sua empresa acessando o <a target="_blank" href="http://sinor.portalcorporativo.serpro/">Sistema de Informações Normativas e Organizacionais - Sinor.
+
+O Sistema apoia o processo decisório em todos os níveis hierárquicos, trazendo documentos e informações arquivadas de forma organizada, que possam ser recuperadas com facilidade e compartilhadas com todos os empregados.
+A solução traz documentos e informações que influenciam o funcionamento do Serpro. São deliberações, decisões de diretoria, decisões setoriais, normas e descrições de atribuições e competências.
+'
+servicos.push({:t=>"LOGÍSTICO:", :c=>homologacoes})
+
+  
+
+
 
 reunioes=br("SIGEPE-Consignações - Inception do módulo Denúncias
 Data: 20 a 22/07/2014
@@ -113,6 +139,13 @@ A safra de 2015 já está sendo gestada, com nosso colega Lucas Salles puxando a
 Filhos... filhos à mão cheia... 
 E manda a humanidade se renovar!!" 
 (baseado em O Livro e a América - A. F. de Castro Alves)')
+
+
+
+
+  
+
+
 
 pessoas = Array.new
 pessoas.push({:t=>"", :c=>cegonha})
