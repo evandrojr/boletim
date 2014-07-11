@@ -22,19 +22,15 @@ p {
   width: 100%;
   height: auto;  
 }
-
 </style>
 </head>
-
 <body>
-
 <div align="center">
-
 <table width="600px">
   <tr>
     <td>
 <h1>Boletim Informativo DESDR</h1>
-<p>Salvador, <%= DateTime.now.strftime('%d/%m/%Y') %> - Boletim Informativo DESDR<p>
+<p>Salvador, <%= DateTime.now.strftime('%d/%m/%Y') %> - Boletim Informativo DESDR <%= boletimNumero %><p>
 <img title="Boletim" class="imgLinha" src="http://publicaintra7.serpro/clientes/supde/supde/cabecalho.png" alt="Boletim" />
 <br>
 <!-- Editorial -->
@@ -55,7 +51,6 @@ p {
 <p>*Boa leitura, aproveitem e contribuam por meio do e-mail: <a href="mailto:lista-comunicacao-desdr@grupos.serpro.gov.br">lista-comunicacao-desdr@grupos.serpro.gov.br</a>!</p>
 <br>
 <br>
-
 <!--De Serviços-->
 <%  if ! servicos.empty? %>
   <img class="imgServico" title="De Serviços" src="http://publicaintra7.serpro/clientes/supde/supde/de_servicos.png" alt="De Serviços" />
@@ -72,63 +67,25 @@ p {
   %>
   <%= s if !s.empty? %>
 <% end %>  
-  
 <!--Fim De Serviços-->
 
 <!--DE Eventos-->
-
+<%  if ! eventos.empty? %>
 <img  title="De Eventos" src="http://publicaintra7.serpro/clientes/supde/supde/de_eventos.png" alt="De frente">
-<br>
-<br>
-<img class="imgLinha" title="Linha" src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha">
-<br>
-<br>
-<% if ! reunioes.empty? %>
-  <h2>REUNIÕES:</h2>
-  <br>
-  <p><%= reunioes %></p>
-  <br>
-  <br>
-<% end %>
-
-<% if ! realizacoes.empty? %>
-  <h2>REALIZAÇÕES:</h2>
-  <br>
-  <p><%= realizacoes %></p>
-  <br>
-  <br>
-<% end %>
-
-
-<% if ! viagens.empty? %>
-<div align="center">
-  <img src="http://voce.serpro/articles/0106/3007/images6.jpeg" width="30%">
-</div>  
-  <br>
-  <br>
-  <h2>VIAGENS:</h2>
-  <br>
-  <p><%= viagens %></p>
-  <br>
-  <br>
-  <br>
-<% end %>
-  
-<!-- FIM DE Eventos -->  
-
-<img  title="De Serviços" src="http://publicaintra7.serpro/clientes/supde/supde/de_mudancas.png"  />
-<br>
-<br>
-<img class="imgLinha"   src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha" />
-<br>
-<br>
-<h2>Novos integrantes para Equipe DE507 e DE508</h2>
-
-
-  <br>
-  <p>Informamos a todos que, desde o dia 03 de julho, Mario Resende passou a integrar a equipe DE508 e Alex Cesar DE507. A equipe DE505 agradece o convívio e as contribuições durante o período que integrou o setor. Desejamos sucesso nas novas atividades!</p>
-  <br>
-  <br>
+  <br><br>
+  <img class="imgLinha"   src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha" />
+  <br><br>
+  <% s=""
+      eventos.each { |p|  
+        s+="<h2>#{p[:t]}</h2>
+        <br>
+        <p>#{p[:c]}</p>
+        <br><br>
+      "}
+  %>
+  <%= s if !s.empty? %>
+<% end %>  
+<!--Fim De Eventos-->
 
 <!-- DE Pessoas -->  
 <%  if !pessoas.empty? %>
