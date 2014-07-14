@@ -10,13 +10,13 @@ h1 {
     color: darkred;
 }
 h2 {
-    color:slategray ;
+    color:slategray;
 }
 h3 {
     color: darkgreen;
 }
 p {
-    text-align: justify
+    text-align: justify;
 }
 .imgLinha{
   width: 100%;
@@ -39,7 +39,7 @@ p {
       editorial.each { |p|  
           t = c = ""
           t = "<h2>#{p[:t]}</h2>" if filled?(p[:t])
-          c = "<p><n>#{p[:c]}:</n>" if filled? p[:c]
+          c = "<p><n>#{p[:c]}</n>" if filled? p[:c]
           s+= t + c 
     }
   %>
@@ -122,7 +122,9 @@ p {
       cultura.each { |p|  
           t = c = ""
           t = "    
-            <h3>#{p[:t]}</h3> " if ! p[:t].empty?
+            <h2>#{p[:t]}</h2> " if ! p[:t].empty?
+          t = "    
+            <h3>#{p[:st]}</h3> " if ! p[:st].empty?
           c = "<p>#{p[:c]}</p>" if ! p[:c].empty?
           s+= t + c 
           s+="<div align='center'>=======</div><br>" if ! p[:c].empty?
@@ -138,18 +140,14 @@ p {
 <!-- Expediente --> 
 
 <% if filled? expediente %>
-
-  <% 
-      s=""
+  <% s=""
       expediente.each { |p|  
-          t = k = v = ""
-          t = "<h2>#{p[:t]}</h2>" if filled?(p[:t])
-          k = "<p><b>#{p[:k]}:</b>  " if filled? p[:k]
-          v = "<i>#{p[:v]}</i></p>" if filled? p[:v]
-          s+= t + k + v
-    }
+      s+="<h2>#{p[:t]}</h2>
+      <br>
+      <p>#{p[:c]}</p>
+      <br><br>
+      "}
   %>
-
   <% if !s.empty? %>
     <%=  s %>
   <% end %>
