@@ -2,6 +2,8 @@
 
 def buildBirthdayGuys(month, data)
 
+  return "" if data.empty?
+  
   content = "<div align='center'><strong>ANIVERSARIANTES DO MÊS DE #{month.upcase}</strong>
   <br><br>"
   content += '

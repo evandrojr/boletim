@@ -105,6 +105,63 @@ p {
 <% end %>  
 <!-- FIM DE Pessoas --> 
 
+<!-- DE Experiencias -->  
+<%  if !experiencias.empty? %>
+  <img class="imgPessoas" src="http://publicaintra7.serpro/clientes/supde/supde/de_experiencias.png" alt="De Experiências" title="De Experiências">
+  <br><br>
+  <img class="imgLinha"  title="Linha" src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha">
+  <br><br>
+  <% s=""
+      experiencias.each { |p|  
+      s+="<h2>#{p[:t]}</h2>
+      <br>
+      <p>#{p[:c]}</p>
+      <br><br>
+      "}
+  %>
+  <%= s if !s.empty? %>
+<% end %>  
+<!-- FIM DE Experiencias --> 
+
+
+<!-- DE Processos -->  
+<%  if !processos.empty? %>
+  <img class="imgPessoas" src="http://publicaintra7.serpro/clientes/supde/supde/de_processos.png" alt="De Processos" title="De Processos">
+  <br><br>
+  <img class="imgLinha"  title="Linha" src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha">
+  <br><br>
+  <% s=""
+      processos.each { |p|  
+      s+="<h2>#{p[:t]}</h2>
+      <br>
+      <p>#{p[:c]}</p>
+      <br><br>
+      "}
+  %>
+  <%= s if !s.empty? %>
+<% end %>  
+
+<!-- FIM DE processos --> 
+
+<!-- DE mudancas -->  
+<%  if !mudancas.empty? %>
+  <img class="imgPessoas" src="http://publicaintra7.serpro/clientes/supde/supde/de_mudancas.png" alt="De mudancas" title="De mudancas">
+  <br><br>
+  <img class="imgLinha"  title="Linha" src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" alt="Linha">
+  <br><br>
+  <% s=""
+      mudancas.each { |p|  
+      s+="<h2>#{p[:t]}</h2>
+      <br>
+      <p>#{p[:c]}</p>
+      <br><br>
+      "}
+  %>
+  <%= s if !s.empty? %>
+<% end %>  
+<!-- FIM DE mudancas --> 
+
+
 <!-- DE Cultura --> 
 <% if !cultura.empty? %>
 <img src="http://voce.serpro/articles/0106/3198/de_cultura.png" alt="">

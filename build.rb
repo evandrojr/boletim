@@ -77,8 +77,10 @@ boletimNumero = doc.xpath('//boletim')[0]['numero']
 editorial=rb('//boletim/editorial', editorial)
 servicos = rb('//boletim/servicos', servicos)
 eventos = rb('//boletim/eventos', eventos)
-mudancas = rb('//boletim/mudancas', mudancas)
 pessoas = rb('//boletim/pessoas', pessoas)
+experiencias = rb('//boletim/experiencias', experiencias)
+processos = rb('//boletim/processos', processos)
+mudancas = rb('//boletim/mudancas', mudancas)
 cultura = rb('//boletim/cultura', cultura)
 expediente = rb('//boletim/expediente', expediente)
 
