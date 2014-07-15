@@ -14,19 +14,27 @@ meses=Hash.new
 meses['01']="janeiro"
 meses['07']="julho"
 meses['08']="agosto"
+meses['09']="setembro"
+meses['10']="outubro"
+meses['11']="novembro"
+meses['12']="dezembro"
 
-dataPorExtenso = DateTime.now.strftime('%d de ' + meses[DateTime.now.strftime('%m')] + ' de %Y')
-
-template = File.read("#{Dir.pwd}/clean.erb")
-content = File.read("#{Dir.pwd}/conteudo.xml")
 
 def br(text)
   return "" if ! filled? (text)
   text = text.gsub(/\r/,"")
+  text = text.gsub(/^ */,"")  
+  text = text.gsub(/^\n*/,"")
   text = text.gsub(/\n/,"<BR>")
 end
 
+def fix(text)
+  return "" if ! filled? (text)
+  text = text.gsub(/”/,'"')
+end
+
 def clean(text)
+  text = text.gsub(/\r/,"")
   text = text.gsub(/^ /,"")
   text = text.gsub(/ $/,"")
   text = text.gsub(/^\n/,"")
@@ -38,7 +46,6 @@ end
 def csvToArray(v)
     v=v.split("\n")
     a = Array.new
-#    puts v.inspect
     v.each{ |l|
       a.push l.split(';')
     }
@@ -71,6 +78,13 @@ def rb(v, sec)
   end
   return sec
 end
+
+dataPorExtenso = DateTime.now.strftime('%d de ' + meses[DateTime.now.strftime('%m')] + ' de %Y')
+
+template = File.read("#{Dir.pwd}/clean.erb")
+content = File.read("#{Dir.pwd}/conteudo.xml")
+content = fix(content)
+
 
 $doc = doc = Nokogiri::XML(content)
 boletimNumero = doc.xpath('//boletim')[0]['numero']

@@ -12,7 +12,7 @@ Novo editorial aqui!!
    <servicos titulo="REALIZAÇÕES:">
    </servicos>
 
-    <eventos titulo="REUNIÕES:">
+    <eventos titulo="PROGRAMAÇÃO:">
     </eventos>
     
     <eventos titulo="VIAGENS:">
@@ -55,11 +55,11 @@ Victor Franco Costa;01/09/2014;18/09/2014;18 dias
 </ferias>
 
 
-<experiencias titulo="teste">
+<experiencias titulo=”teste”>
 teste experiencias
 </experiencias>
 
-<processos titulo="teste">
+<processos titulo=”teste”>
 teste processos
 </processos>
 
@@ -71,10 +71,14 @@ teste processos
     </cultura>
 
 
-    <expediente titulo="EXPEDIENTE:">
+    <expediente titulo=”EXPEDIENTE:">
         Chefe de Reportagem: Vileide
-        Diagramação e Programação: Evandro
+        Diagramação: Vileide 
+        Programação: Evandro
+        Projeto Gráfico: Gustavo Cruz e Marco Souza
         Conteúdo e Contribuições: 
     </expediente>
+
+
 </boletim>
 

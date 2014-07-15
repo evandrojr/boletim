@@ -22,6 +22,17 @@ p {
   width: 100%;
   height: auto;  
 }
+.caixa{
+  margin: 0 15px 0 25px;
+  width: 500px; 
+  background-color:#F7F4FB;
+  font-family: Arial !important;
+  font-size: 110% !important;
+  text-align: justify;
+  margin-left: 30px;
+  padding: 25px;"
+}
+
 </style>
 </head>
 <body>
@@ -34,23 +45,27 @@ p {
 <img title="Boletim" class="imgLinha" src="http://publicaintra7.serpro/clientes/supde/supde/cabecalho.png" alt="Boletim" />
 <br>
 <!-- Editorial -->
-  <% 
-      s=""
-      editorial.each { |p|  
-          t = c = ""
-          t = "<h2>#{p[:t]}</h2>" if filled?(p[:t])
-          c = "<p><n>#{p[:c]}</n>" if filled? p[:c]
-          s+= t + c 
-    }
-  %>
-  <% if !s.empty? %>
-    <%=  s %>
-  <% end %>
+
+<% if !editorial.empty? %>
+<div class="caixa" >
+
+          <% 
+              s=""
+              editorial.each { |p|  
+                  t = c = ""
+                  t = "<h2>#{p[:t]}</h2>" if filled?(p[:t])
+                  c = "<p><n>#{p[:c]}</n>" if filled? p[:c]
+                  s+= t + c 
+            }
+          %>
+          <% if !s.empty? %>
+            <%=  s %>
+          <% end %>
+        <p>*Boa leitura, aproveitem e contribuam por meio do e-mail: <a href="mailto:lista-comunicacao-desdr@grupos.serpro.gov.br">lista-comunicacao-desdr@grupos.serpro.gov.br</a>!</p>
+   </div>
 <br>
+<% end %>
 <!-- Fim Editorial -->
-<p>*Boa leitura, aproveitem e contribuam por meio do e-mail: <a href="mailto:lista-comunicacao-desdr@grupos.serpro.gov.br">lista-comunicacao-desdr@grupos.serpro.gov.br</a>!</p>
-<br>
-<br>
 <!--De Serviços-->
 <%  if ! servicos.empty? %>
   <img class="imgServico" title="De Serviços" src="http://publicaintra7.serpro/clientes/supde/supde/de_servicos.png" alt="De Serviços" />
@@ -190,17 +205,17 @@ p {
 <!-- Expediente --> 
 
 <% if filled? expediente %>
+  <div class="caixa">
   <% s=""
       expediente.each { |p|  
-      s+="<h2>#{p[:t]}</h2>
-      <br>
-      <p>#{p[:c]}</p>
-      <br><br>
+        s+="<h2>#{p[:t]}</h2>
+        #{p[:c]}
       "}
   %>
   <% if !s.empty? %>
-    <%=  s %>
+    <%= s %>
   <% end %>
+  </div>  
 <% end %>
  
 <!-- Fim DE Cultura -->  
