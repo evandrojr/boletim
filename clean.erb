@@ -30,7 +30,7 @@ p {
   <tr>
     <td>
 <h1>Boletim Informativo DESDR</h1>
-<p>Salvador, <%= DateTime.now.strftime('%d/%m/%Y') %> - Boletim Informativo DESDR <%= boletimNumero %><p>
+<p>Salvador, <%= dataPorExtenso %> - Boletim Informativo DESDR <%= boletimNumero %><p>
 <img title="Boletim" class="imgLinha" src="http://publicaintra7.serpro/clientes/supde/supde/cabecalho.png" alt="Boletim" />
 <br>
 <!-- Editorial -->
@@ -106,19 +106,12 @@ p {
 <!-- FIM DE Pessoas --> 
 
 <!-- DE Cultura --> 
-
 <% if !cultura.empty? %>
-
-<div align="center">
-  <img src="http://voce.serpro/articles/0106/3200/SessaoPipoca.jpg" alt="" width="200" style="">
-</div>
 <img src="http://voce.serpro/articles/0106/3198/de_cultura.png" alt="">
 <br>
 <img class="imgLinha"  src="http://publicaintra7.serpro/clientes/supde/supde/linha_de.png" >
-<br>
-<br>
-  <% 
-      s=""
+<br><br>
+  <%  s=""
       cultura.each { |p|  
           t = c = ""
           t = "    

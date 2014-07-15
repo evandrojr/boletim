@@ -2,6 +2,8 @@
 
 def buildLeave(month, data)
 
+ return "" if data.empty?
+  
  content = "<div align='center'>
   <strong>FÉRIAS DO MÊS DE #{month.upcase}</strong>
   <br><br>"

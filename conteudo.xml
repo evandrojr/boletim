@@ -1,94 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <boletim numero="048">
-    <editorial>Vocês devem ter visto no Primeira Leitura, algo que está mexendo com toda a empresa, e agora tem o patrocínio da alta Direção. Um grupo designado pela Diretoria, com representantes de todas as áreas, está reunido há quase duas semanas discutindo, traçando estratégias e encaminhando ações para que a empresa passe a adotar a metodologia ágil. O caminho é longo, a mudança é gradativa, nossa pluralidade exigirá equilíbrio e adaptações, mas todo o investimento será recompensado, pois esse movimento não significa apenas um novo processo de trabalho, significa, entre outras coisas, algo muito maior - transformação de cultura!
+    <editorial>
 
-Passaremos por um processo de mudança em que, naturalmente, algumas pessoas se adaptarão mais facilmente do que outras, alguns demonstrarão maior disposição, outros mais preocupação, mas estaremos juntos, como um único time, se ajudando frente aos novos desafios!
+Novo editorial aqui!!
 
-Devemos ter mais informações em breve.</editorial>
-    <servicos titulo="HOMOLOGAÇÃO:">
-            SIGEPE-GED-AFD - Validação        
-    </servicos>
-    <servicos titulo="REALIZAÇÕES:">
-        A equipe e-Processo 
-    </servicos>
+  </editorial>
+
+  <servicos titulo="HOMOLOGAÇÃO:">
+  </servicos>
+
+   <servicos titulo="REALIZAÇÕES:">
+   </servicos>
+
     <eventos titulo="REUNIÕES:">
-        SIGEPE-Consignações - Inception do módulo Denúncias
-        Data: 20 a 22/07/2014
-        Objetivo: Realizar o evento de inception para levantar e priorizar o backlog do módulo Denúncias do SIGEPE-Consignações
-        Responsável: Sandro Almeida
-
-        Renda Variável - Reunião com RFB 
-        Data: 22 a 24/7/2014. 
-        Objetivo: Reunião de retomada do sistema de com a RFB 
-        Responsável: Leonardo Cunha
     </eventos>
     
     <eventos titulo="VIAGENS:">
-        - Lucas Carvalho Rego
-
-        Objetivo: Participar da reunião de integração do módulo de julgamento entre os sistemas SIEF-Processos e e-Processo.
-        Período: 15/07/2014 a 18/07/2014.
-        Local: São Paulo (Serpro/Socorro)
     </eventos>
 
-    <mudancas titulo="Novos integrantes para Equipe DE507 e DE508">
-        Em julho/14, Mario Resende passou a integrar a equipe DE508  e Alex Cesar a equipe DE507. A equipe DE505, a qual eles estavam alocados antes, agradece o convívio e as contribuições durante o período que integrou o setor. Desejamos sucesso  nas novas atividades!
-    </mudancas>
+    <mudancas titulo="[Título da mudança]">
+     </mudancas>
 
     <pessoas>
-            <div align="center"><img src="http://voce.serpro/articles/0106/3070/turma_da_cegonha.jpeg" height="197" width="197"/></div>        
+            <div align="center">
+<img src="http://voce.serpro/articles/0106/3070/turma_da_cegonha.jpeg"
+ height="197" width="197"/>
+</div>        
     </pessoas>       
 
-    <pessoas>
-        Lucas Salles é o primeiro confirmado como Papai 2015, com previsão para Fevereiro. Como ainda está cedo, não sabemos o sexo.
-        Rogério Reis está esperando uma menina com o nome de Ananda. 
-    </pessoas>       
-
-    <aniversariantes>
-1;GUSTAVO FERREIRA GOMES LOBO  ;SUPDE/DESDR/DE511
-1;JOAO VICTOR CORREIA VITAL    ;SUPDE/DESDR/DE509
-1;LETICIA DA CRUZ SANTOS       ;SUPDE/DESDR/DE5ED
-5;VICTOR FRANCO COSTA          ;SUPDE/DESDR/DE5CT
-6;LUCAS CARVALHO REGO          ;SUPDE/DESDR/DE511
-7;ISABEL NADINE DE S. SANTOS   ;SUPDE/DESDR/DE513
-8;RONALDO ALMEIDA RIBEIRO      ;SUPDE/DESDR/DE501
-19;ADRIANA GUEDES A. MARQUES    ;SUPDE/DEDES/DEDS2
-19;EDSON LUIS G. CORREA DA SILVA;SUPDE/DESDR/DE505
-20;FLAVIO DE MATOS SANTOS       ;SUPDE/DESDR/DE512
-22;MARIA JOSE LOPES DA SILVA    ;SUPDE/DESDR/DE5ED
-26;CLAUDIA TEDESCO DE OLIVEIRA  ;SUPDE/DESDR/DE504
-30;DANIELA FALCAO AVILA         ;SUPDE/DEDES/DEDS2
-    </aniversariantes>
+<aniversariantes></aniversariantes>
     
-    <ferias>
-Aline Rios Chian Oliveira;16/07/2014;25/07/2014;10 dias
-Alessandra Vinhas;28/07/2014;16/08/2014;20 dias
-Ana Regina Silva Costa;14/07/2014;23/07/2014;10 dias
-Bruno Leite Cervantes;22/07/2014;31/07/2014;10 dias
-Carlile Neves Soares;09/07/2014;18/07/2014;10 dias
-Carlos Eugenio Palma da Purificação;21/07/2014;07/08/2014;18 dias
-Carlos Leonardo Goes Farias;14/07/2014;28/07/2014;15 dias
-Cleiton Marcio Vieiro Lima;11/07/2014;30/07/2014;20 dias
-Fernando Antonio Leite de Oliveira;07/07/2014;16/07/2014;10 dias
-Gustavo Soares der Almeida;03/07/2014;12/07/2014;10 dias
-Hendi Marcos Ramos Silva;14/07/2014;02/08/2014;20 dias
-Jabis dos Santos de Andrade;14/07/2014;23/07/2014;10 dias
-Joaci Justino Campos;09/06/2014;18/06/2014;10 dias
-Joao Victor Correia Vital;07/07/2014;24/07/2014;18 dias
-Leandro Nunes dos Santos;14/07/2014;23/07/2014;10 dias
-Leandro Sicupira Cortes;23/07/2014;01/08/2014;10 dias
-Leonardo Riberio Soares;09/07/2014;18/07/2014;10 dias
-Luis Gustavo Carmeiro de Queiroz;03/07/2014;12/07/2014;10 dias
-Luis Gustavo Peralta Mascotto;14/07/2014;31/07/2014;18 dias
-Marcelo Braga Benjamin;28/07/2014;15/08/2014;19 dias
-Marco Vinicius Costa Souza;07/07/2014;16/07/2014;10 dias
-Paula Pedro Antunes;09/07/2014;18/07/2014;10 dias
-Paulo Penna Duarte;03/07/2014;20/07/2014;18 dias
-Ricardo Ferreira dos Santos;16/07/2014;25/07/2014;10 dias
-Rogerio Luiz Sampaio Santos;07/07/2014;16/07/2014;10 dias
-Rogério Nobre dos Santos;30/07/2014;08/08/2014;10 dias
-Vanessa Strauch de Souza;03/07/2014;20/07/2014;18 dias        
-    </ferias>
+<ferias>
+Andrea Jesus dos Santos;11/08/2014;28/08/2014;18 dias
+Andrea Rodrigues de Amorim;21/08/2014;02/09/2014;13 dias
+Alexandre Meirelles de Moura;25/08//2014;03/09/2014;10 dias
+Bruno Ferraz Dourado;20/08/2014;29/08/2014;10 dias
+Edson Luis Gomes Correa da Silva;06/08/2014;15/08/2014;10 dias
+Eric Maciel Ambrosi;11/08/2014;30/08/2014;20 dias
+Isabel Nadine de Santana Santos;06/08/2014;25/08/2014;20 dias
+Gilmara Furtado Bezerra;20/08/2014;29/08/2014;10 dias
+Klauber Cunha Macedo;05/08/2014;22/08/2014;18 dias
+Lucas Salles Wendelberger;09/08/2014;18/08/2014;10 dias
+Manoel Caetano de Jesus Neto;11/08/2014;20/08/2014;10 dias
+Maria das Graças Mello de Almeida;11/08/2014;30/08/2014;20 dias
+Marcelo Henrique Rebello da Silva;06/08/2014;15/08/52014;10 dias
+Marcos Cunha Porto Maia;11/08/2014;21/08/2014;11 dias
+Paula Pedro Antunes;20/08/2014;29/08/2014;10 dias
+Tiago Edmundo Ribeiro Brito;11/08/2014;29/08/2014;19 dias
+Vanderlei de Menezes Souza;13/08/2014;22/08/2014;10 dias;
+Vanubia Lopes Pereira;11/08/2014;30/08/2014;20 dias
+Victor Franco Costa;01/09/2014;18/09/2014;18 dias
+</ferias>
 
     <cultura titulo="SESSÃO PIPOCA"></cultura>
 
@@ -101,9 +63,7 @@ Vanessa Strauch de Souza;03/07/2014;20/07/2014;18 dias
     <expediente titulo="EXPEDIENTE:">
         Chefe de Reportagem: Vileide
         Diagramação e Programação: Evandro
-        Conteúdo e Contribuições: Ana Regina, Carlile, Eduardo Tourinho, Evandro, Fabão, Leo Cunha, Lívia Embiruçu, Lucas Rego, Taise, Vanderlei e Vileide
+        Conteúdo e Contribuições: 
     </expediente>
 </boletim>
-
-
 

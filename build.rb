@@ -15,6 +15,8 @@ meses['01']="janeiro"
 meses['07']="julho"
 meses['08']="agosto"
 
+dataPorExtenso = DateTime.now.strftime('%d de ' + meses[DateTime.now.strftime('%m')] + ' de %Y')
+
 template = File.read("#{Dir.pwd}/clean.erb")
 content = File.read("#{Dir.pwd}/conteudo.xml")
 
@@ -83,13 +85,17 @@ expediente = rb('//boletim/expediente', expediente)
 aniversariantes = csvToArray(clean(r('//boletim/aniversariantes')))
 ferias = csvToArray(clean(r('//boletim/ferias')))
 
-boloImg='<div align="center"><img style="-webkit-user-select: none" src="http://www.brasilescola.com/upload/e/aniversario.jpg"></div>'
-pessoas.push({:t=>"", :c=>boloImg})
-pessoas.push({:t=>"", :c=>buildBirthdayGuys(meses[DateTime.now.strftime('%m')], aniversariantes)})
+if filled? aniversariantes 
+  boloImg='<div align="center"><img style="-webkit-user-select: none" src="http://www.brasilescola.com/upload/e/aniversario.jpg"></div>'
+  pessoas.push({:t=>"", :c=>boloImg})
+  pessoas.push({:t=>"", :c=>buildBirthdayGuys(meses[DateTime.now.strftime('%m')], aniversariantes)})
+end  
 
-feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://rekoba.com.br/wp-content/uploads/2012/12/REKOBA-F%C3%89RIAS-2012.jpg"></div>'
-pessoas.push({:t=>"", :c=>feriasImg})
-pessoas.push({:t=>"", :c=>buildLeave("julho", ferias)})
+if filled? ferias
+  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://rekoba.com.br/wp-content/uploads/2012/12/REKOBA-F%C3%89RIAS-2012.jpg"></div>'
+  pessoas.push({:t=>"", :c=>feriasImg})
+  pessoas.push({:t=>"", :c=>buildLeave(meses[DateTime.now.strftime('%m')], ferias)})
+end
 
 renderer = ERB.new(template)
 puts output = renderer.result()
