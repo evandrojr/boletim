@@ -1,84 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <boletim numero="048">
-    <editorial>
-
+<editorial>
 Novo editorial aqui!!
+</editorial>
 
-  </editorial>
+<servicos titulo="HOMOLOGAÇÃO:">
+</servicos>
 
-  <servicos titulo="HOMOLOGAÇÃO:">
-  </servicos>
+<servicos titulo="REALIZAÇÕES:">
+</servicos>
 
-   <servicos titulo="REALIZAÇÕES:">
-   </servicos>
-
-    <eventos titulo="PROGRAMAÇÃO:">
-    </eventos>
+<eventos titulo="PROGRAMAÇÃO:">
+</eventos>
     
-    <eventos titulo="VIAGENS:">
-    </eventos>
+<eventos titulo="VIAGENS:">
+</eventos>
 
-    <mudancas titulo="[Título da mudança]">
-     </mudancas>
-
-    <pessoas>
+<pessoas>
             <div align="center">
-<img src="http://voce.serpro/articles/0106/3070/turma_da_cegonha.jpeg"
- height="197" width="197"/>
+<img src="http://voce.serpro/articles/0106/3070/turma_da_cegonha.jpeg"  height="197" width="197"/>
 </div>        
-    </pessoas>       
-    <pessoas>
-    </pessoas>       
+</pessoas>       
+     
+<mudancas titulo="[Título da mudança]">
+ </mudancas>
 
-<aniversariantes></aniversariantes>
+<aniversariantes>
+<!-- Dia aniversário; Nome funcionario; Setor -->
+</aniversariantes>
     
 <ferias>
+<!--  Nome;             Início;                   Término;          Duração -->
+
+Alexandre Meirelles de Moura;25/08//2014;03/09/2014;10 dias
 Andrea Jesus dos Santos;11/08/2014;28/08/2014;18 dias
 Andrea Rodrigues de Amorim;21/08/2014;02/09/2014;13 dias
-Alexandre Meirelles de Moura;25/08//2014;03/09/2014;10 dias
+Antonio Carlos Monteiro dos Santos;04/08/2014;13/08/2014;10 dias 
 Bruno Ferraz Dourado;20/08/2014;29/08/2014;10 dias
 Edson Luis Gomes Correa da Silva;06/08/2014;15/08/2014;10 dias
 Eric Maciel Ambrosi;11/08/2014;30/08/2014;20 dias
 Isabel Nadine de Santana Santos;06/08/2014;25/08/2014;20 dias
 Gilmara Furtado Bezerra;20/08/2014;29/08/2014;10 dias
 Klauber Cunha Macedo;05/08/2014;22/08/2014;18 dias
+Liane de Oliveira Bastos;04/08/2014;13/08/2014;10 dias
 Lucas Salles Wendelberger;09/08/2014;18/08/2014;10 dias
 Manoel Caetano de Jesus Neto;11/08/2014;20/08/2014;10 dias
 Maria das Graças Mello de Almeida;11/08/2014;30/08/2014;20 dias
+Marcelo Braga Benjamin;11/08/2014;29/08/2014;19 dias
 Marcelo Henrique Rebello da Silva;06/08/2014;15/08/52014;10 dias
 Marcos Cunha Porto Maia;11/08/2014;21/08/2014;11 dias
 Paula Pedro Antunes;20/08/2014;29/08/2014;10 dias
+Sandro dos Santos Rodrigues;04/08/2014;13/08/2014;10 dias
+Solange Maria Pires Sad;18/08/2014;27/08/2014;10 dias
 Tiago Edmundo Ribeiro Brito;11/08/2014;29/08/2014;19 dias
 Vanderlei de Menezes Souza;13/08/2014;22/08/2014;10 dias;
 Vanubia Lopes Pereira;11/08/2014;30/08/2014;20 dias
-Victor Franco Costa;01/09/2014;18/09/2014;18 dias
 </ferias>
 
 
-<experiencias titulo=”teste”>
+<experiencias titulo=”EXPERIÊNCIAS:”>
 teste experiencias
 </experiencias>
 
-<processos titulo=”teste”>
+<processos titulo=”PROCESSOS”>
 teste processos
 </processos>
 
-    <cultura titulo="SESSÃO PIPOCA"></cultura>
+<cultura titulo="DE PORTUGA"></cultura>
+<cultura titulo="SESSÃO PIPOCA"></cultura>
 
-    <cultura subtitulo='Eu e Você ("Io e Te", Itália, 2012) ★★★★'>
+<cultura subtitulo='Eu e Você ("Io e Te", Itália, 2012) ★★★★'>
         Sinopse: Escondido no porão para passar suas férias de inverno, Lorenzo, um jovem de quatorze anos, introvertido e um pouco neurótico, está se preparando para viver seu grande sonho: nada de conflitos, nada de colegas chatos de classe, nada de brincadeiras e falsidades. O mundo lá fora com suas regras incompreensíveis e ele deitado no sofá, bebendo muita coca-cola, comendo atum em caixinha e com livros de terror ao seu redor. Será Olivia, que chega de repente no porão com sua agressiva vitalidade, a tirar Lorenzo de seu universo sombrio, para que ele tire a máscara de adolescente complicado e aceite o jogo caótico da vida fora de quatro paredes. Dirigido por Bernardo Bertolucci.
         Fonte: Blog "Eu e a Telona" (http://eueatelona.blogspot.com.br/2013/10/eu-e-voce-io-e-te-2012.html)
-    </cultura>
+</cultura>
 
 
-    <expediente titulo=”EXPEDIENTE:">
+<expediente titulo=”EXPEDIENTE:">
         Chefe de Reportagem: Vileide
         Diagramação: Vileide 
         Programação: Evandro
         Projeto Gráfico: Gustavo Cruz e Marco Souza
-        Conteúdo e Contribuições: 
-    </expediente>
-
-
+        Conteúdo e Contribuições: Evandro, Livia, Taise, Vileide... 
+ </expediente>
 </boletim>
 
