@@ -1,31 +1,124 @@
 <boletim numero="048">
+
 <editorial>
-Novo editorial aqui!!
+A vida vive pedindo pra gente mudar.
+Isso vale para você também, sabia?
+Vamos, ceda às forças internas, sem resistir.
+Afinal, toda mudança é para melhor. Olhe para trás e veja as fases de sua vida. Nem sempre foi confortável, né? Especialmente para pessoas com maneiras e idéias muito cristalizadas.
+Mas é preciso estar disposto a jogar fora gradualmente as idéias que parecem boas, confortáveis e seguras. Isso mesmo, as bolas, confortáveis e seguras!!! E quando estiver completamente livre e aberto para receber idéias novas e revolucionárias, as mudanças vão acontecer em sua vida… Pare de esperar a felicidade sem esforços. Pare de exigir das pessoas aquilo que muitas vezes nem você conseguiu conquistar. E, definitivamente, deixe de ser crítico e trabalhe mais pra você, para a sua felicidade e para o mundo, sem se esquecer de agradecer. Agradeça a tudo que você tem na vida. Tudo! Inclusive aquilo que você chama de dor! Nossa compreensão de mundo, é muito reduzida para julgar os outros… Encare a mudança como um degrau para revelações ainda maiores e mais maravilhosas que estão aguardando lugar em você para poderem se manifestar. Você não pode avançar para o novo se ainda está obstruído e contaminado pelo velho. Deixe-o para trás. E tem mais: mude enquanto você tem o poder de fazer isso. Pela dor ou pelo amor, você pode mudar. Ou então saiba que alguém ou alguma situação poderão pilotar o seu processo de mudança e de transformação. Vamos! Coragem! Você pode! Você é capaz! Supere-se! A razão da sua vida é você mesmo! 
+[i]Luiz Carlos Mazzini[/i]
 </editorial>
 
-<servicos titulo="HOMOLOGAÇÃO:">
+<servicos titulo="HOMOLOGAÇOES:">
+
+Equipes DE504 e DE507: Sandro e Vanderlei
+
+SIGEPE-GED-AFD - Validação
+Data: 04/08/2014
+Objetivo: Validar a iteração 5 do SIGEPE-GED-AFD
+Responsável: Vanderlei Souza (remota)
+
+SIGEPE-PA - Validação
+Data: 19/08/2014
+Objetivo: Validar a iteração 8 do SIGEPE - Pensão Alimentícia
+Responsável: Cezar Ronaldo (remota)
+
+SIGEPE-Consignações - Validação
+Data: 13/08/2014
+Objetivo: Validar a iteração 6 da release 1.1 do SIGEPE-Consignações
+Responsável: Sandro Almeida (remota)
+
+Equipes DE511 e DE512: Carlile e Lucas Rego
+e-Processo
+=> e-PROCESSO-20543 - COCAJ 0005/2012 - Requerimentos: 04 a 15/08 (remota)
+=> e-PROCESSO-129499 - ACEPR 20140101S1 - Envio dos Dados da Sessão de Julgamento ao Sítio do CARF: 04 a 08/08 (remota)
+=> e-PROCESSO-222638 - CODAC 0184/2014 CODAC 0187/2014 - Matriz atuar como Filial / Contribuinte ver Comunicados com Certificado Digital (sem DTE): 04 a 15/08 (remota)
+
 </servicos>
 
 <servicos titulo="REALIZAÇÕES:">
+Equipe DE505 - Jamil: Desafios à  frente. 
+
+A Copa acabou mas a bola continua rolando no DE505. A equipe já  iniciou novos projetos mobile: a construção do APP Atendimento da RFB,  evoluções no APP CNPJ e novas demandas para o m-IRPF. Vamos em frente!
 </servicos>
 
+<!--Seção desabilitada
 <eventos titulo="PROGRAMAÇÃO:">
 </eventos>
+-->
     
 <eventos titulo="VIAGENS:">
+CEZAR RONALDO ELLER
+Objetivo da Viagem: Participar do 11º Encontro de Estratégia do Curso de Especialização em Gestão Pública Foco Estratégia, no Rio de Janeiro, no período de 11 a 15/08/2014.    
+LUCAS CARVALHO REGO
+ANTONIO COELHO ROSA
+Objetivo da Viagem: Participar de reunião para validar as definições por meio da apresentação do protótipo e do modelo. Período: 11 a 15/08/14
+Local: São Paulo 
+    
+
+ELANE SOUZA LAGO ARAUJO
+Objetivo da Viagem: Acompanhar homologação do Comunidades Terapêuticas, junto a SUNAF e Ministério da Justiça (MJ)
+Sistema: SINESP-CT - Sistema Nacional de Informação de Segurança Pública - Comunidades Terapêuticas
+Periodo: 04/08/2014 a 08/08/2014.
+Local: Brasilia
+    
+    
+LEANDRO COELHO CORREIA
+Objetivo da Viagem: Acompanhar homologação do INFOGGI, junto a SUNAF e Ministério da Justiça (MJ)
+Sistema: SINESP-INFOGGI - Sistema Nacional de Informação de Segurança Pública - Sistema de Gabinete de Gestão Integrada
+Periodo: 04/08/2014 a 08/08/2014.
+Local: Brasilia
+</eventos>
+
+<eventos titulo="DICAS:">
+
+PALESTRA: " Como melhorar sua comunicação com sua equipe, sua mãe e seu chefe" http://www.infoq.com/br/presentations/como-melhorar-sua-cominucacao
+
+1º Congresso Nacional de Business Intelligence - gratuito e on line!
+
+Inscrição: http://www.conabi.com.br/
+
+O evento é organizado e idealizado pelo Instituto Nacional Business Analytics. O Congresso será transmitido ao vivo entre os dias 18 e 24 de Agosto e contará com os Maiores Experts de Business Intelligence do Brasil. Serão apresentadas 21 palestras distribuídas em 7 dias, abordando Carreira, Tecnologias e Negócios no segmento de Business Intelligence e suas derivações.
 </eventos>
 
 <pessoas>
-            <div align="center">
-<img src="http://voce.serpro/articles/0106/3070/turma_da_cegonha.jpeg"  height="197" width="197"/>
-</div>        
+       <div align="center">
+             <img src="http://voce.serpro/articles/0106/3070/turma_da_cegonha.jpeg"
+                height="197" width="197"/>
+       </div>        
 </pessoas>       
      
-<mudancas titulo="[Título da mudança]">
+<mudancas titulo="MUDANÇA INTERNA:">
+	 	 	 	
+Informamos a todos que Maria do ECAD vai trabalhar com Fabão após o retorno de Letícia das férias (segunda quinzena de agosto) e, desde o dia 04/08/2014, Augusto Requião passou a trabalhar conosco no ECAD. Ele veio da SUNAF por interesse próprio. Fizemos uma permuta com Sandra que, também por interesse próprio, irá para Brasília / SUNAF a partir de janeiro/15.
+
  </mudancas>
+
+<mudancas titulo="NOVO COLEGA NA DESDR:">
+
+
+
+Augusto tem quatro anos de SERPRO, todos eles trabalhando na SUNAF. Tem conhecimento de gestão de projetos, mas não conhece bem o desenvolvimento. Ele entrará no ECAD também para começar sua formação na DE e avaliarmos em seguida onde ele poderá melhor contribuir. No ECAD, combinamos uma capacitação on the job, em que ele ficará com cada colega um período, aprendendo sobre incidentes, APF, ALM, etc...
+
+ </mudancas>
+
 
 <aniversariantes>
 <!-- Dia aniversário; Nome funcionario; Setor -->
+02/08;Andrea Amorim;DE511
+02/08;Leonardo Virgilio;DE512
+10/08;Elane Araujo;DE501
+11/08;Alessandra Souza;DE5CT
+12/08;Liane Bastos;DE501
+13/08;Djalma Silva;DE508
+18/08;Antonio Freire;DE506
+23/08;Fabio Silva(Fabão);DE508
+23/08;Michel Ferreira;DE501
+24/08;Josafa Junior;DE505
+27/08;Hendi Silva;DE5CT
+27/08;Marcos Maia;DE504
+28/08;Cezar Eller;DE507
+31/08;Abner Oliveira;DE5CT
 </aniversariantes>
     
 <ferias>
@@ -35,51 +128,170 @@ Alexandre Meirelles de Moura;25/08//2014;03/09/2014;10 dias
 Andrea Jesus dos Santos;11/08/2014;28/08/2014;18 dias
 Andrea Rodrigues de Amorim;21/08/2014;02/09/2014;13 dias
 Antonio Carlos Monteiro dos Santos;04/08/2014;13/08/2014;10 dias 
+Bruno Bastos Guimaraes;04/08/2014;23/08/2014;20 dias
 Bruno Ferraz Dourado;20/08/2014;29/08/2014;10 dias
+Domingos Rodrigues de Menezes Neto;04/08/2014;22/08/2014;19 dias
 Edson Luis Gomes Correa da Silva;06/08/2014;15/08/2014;10 dias
 Eric Maciel Ambrosi;11/08/2014;30/08/2014;20 dias
 Isabel Nadine de Santana Santos;06/08/2014;25/08/2014;20 dias
 Gilmara Furtado Bezerra;20/08/2014;29/08/2014;10 dias
 Klauber Cunha Macedo;05/08/2014;22/08/2014;18 dias
+Leticia da Cruz Santos;04/08/2014;23/08/2014;;20 dias
 Liane de Oliveira Bastos;04/08/2014;13/08/2014;10 dias
 Lucas Salles Wendelberger;09/08/2014;18/08/2014;10 dias
 Manoel Caetano de Jesus Neto;11/08/2014;20/08/2014;10 dias
 Maria das Graças Mello de Almeida;11/08/2014;30/08/2014;20 dias
 Marcelo Braga Benjamin;11/08/2014;29/08/2014;19 dias
-Marcelo Henrique Rebello da Silva;06/08/2014;15/08/52014;10 dias
+Marcelo Henrique Rebello da Silva;06/08/2014;15/08/2014;10 dias
 Marcos Cunha Porto Maia;11/08/2014;21/08/2014;11 dias
 Paula Pedro Antunes;20/08/2014;29/08/2014;10 dias
+Ronaldo Almeida Ribeiro;04/08/2014;21/08/2014;18 dias
 Sandro dos Santos Rodrigues;04/08/2014;13/08/2014;10 dias
 Solange Maria Pires Sad;18/08/2014;27/08/2014;10 dias
 Tiago Edmundo Ribeiro Brito;11/08/2014;29/08/2014;19 dias
-Vanderlei de Menezes Souza;13/08/2014;22/08/2014;10 dias;
+Vanderlei de Menezes Souza;13/08/2014;22/08/2014;10 dias
 Vanubia Lopes Pereira;11/08/2014;30/08/2014;20 dias
 </ferias>
 
+<pessoas>
+FIQUEM ATENTOS:
+- Férias: programação e reprogramação de férias - período de fruição de 5/9/2014 a 4/10/2014.
+a) Empregados - programar férias SGP -  até dia 8/8/2014, às 18h;
+b) Chefia imediata - aprovar férias SGP - até dia 11/8/2014, às 18h.
+</pessoas>
 
-<experiencias titulo=”EXPERIÊNCIAS:”>
+<!--<experiencias titulo=”EXPERIÊNCIAS:”>
 teste experiencias
 </experiencias>
 
+
 <processos titulo=”PROCESSOS”>
 teste processos
-</processos>
+</processos>-->
 
-<cultura titulo="DE PORTUGA"></cultura>
-<cultura titulo="SESSÃO PIPOCA"></cultura>
+<cultura titulo="DE PORTUGA">    
+O uso adequado do “porque”. É comum surgir a dúvida, quando estamos redigindo um texto, se o porque deve ser escrito junto, separado, com acento ou sem acento.
+Além da regra básica – separado na pergunta e junto na resposta – é preciso ficar atento às outras regras. Vamos lá:
+Por que
+- usado nas perguntas. Ex.: Por que você se atrasou?
+- sempre que estiverem subentendidas as palavras razão e motivo. Ex.: Não sei por que Juliana está irritada.
+- quando o por que puder ser substituído por para que ou pelo qual/pela qual. Ex.: Este é o trabalho por que (pelo qual) optou.
+Por quê
+- quando encerra a frase. Exemplos: Você se atrasou por quê?
+Porque
+- quando equivale a pois, porquanto, uma vez que, pelo fato ou motivo de que. Exemplos: A cidade estava vazia porque quase todos foram viajar. - Não se atrase porque vamos esperá-lo.
+- essa forma também é usada nas orações interrogativas nas quais se aguarda uma resposta. Ex.: Ela não compareceu à reunião porque estava doente?
+Porquê
+- quando substitui as palavras motivo, causa, razão, pergunta ou indagação como substantivo. Exemplos: Não imagino o porquê dela não querer ir. - Não sei o porquê de Mariana estar tão exausta.
 
-<cultura subtitulo='Eu e Você ("Io e Te", Itália, 2012) ★★★★'>
-        Sinopse: Escondido no porão para passar suas férias de inverno, Lorenzo, um jovem de quatorze anos, introvertido e um pouco neurótico, está se preparando para viver seu grande sonho: nada de conflitos, nada de colegas chatos de classe, nada de brincadeiras e falsidades. O mundo lá fora com suas regras incompreensíveis e ele deitado no sofá, bebendo muita coca-cola, comendo atum em caixinha e com livros de terror ao seu redor. Será Olivia, que chega de repente no porão com sua agressiva vitalidade, a tirar Lorenzo de seu universo sombrio, para que ele tire a máscara de adolescente complicado e aceite o jogo caótico da vida fora de quatro paredes. Dirigido por Bernardo Bertolucci.
-        Fonte: Blog "Eu e a Telona" (http://eueatelona.blogspot.com.br/2013/10/eu-e-voce-io-e-te-2012.html)
+* Cristina Balerini é jornalista do Grupo Catho. Tel.: (11) 3177-0700, ramal 296.
+
+    			
+
+Regência Verbal
+
+1- Chegar/ ir – deve ser introduzido pela preposição “a” e não pela preposição “em”.
+Exemplos:
+
+Vou ao dentista.
+Cheguei a Belo Horizonte.
+
+2- Morar/ residir – normalmente vêm introduzidos pela preposição “em”.
+Exemplos:
+
+Ele mora em São Paulo.
+Maria reside em Santa Catarina.
+
+3- Namorar – não se usa com preposição.
+
+Ex.: Joana namora Antônio.
+
+4- Obedecer/desobedecer – exigem a preposição “a”.
+Exemplos:
+
+As crianças obedecem aos pais.
+O aluno desobedeceu ao professor.
+
+5-Simpatizar/ antipatizar – exigem a preposição “com”.
+Exemplos:
+
+Simpatizo com Lúcio.
+Antipatizo com meu professor de História.
+
+Dicas:
+Estes verbos não são pronominais, portanto, determinadas construções são consideradas erradas quando tais verbos aparecem acompanhados de pronome oblíquo.
+Exemplos:
+
+Simpatizo-me com Lúcio.
+Antipatizo-me com meu professor de História.
+
+6- Preferir - este verbo exige dois complementos, sendo que um é usado sem preposição, e o outro com a preposição “a”.
+
+Ex.: Prefiro dançar a fazer ginástica.
+
+Dicas:
+Segundo a linguagem formal, é errado usar este verbo reforçado pelas expressões ou palavras: antes, mais, muito mais, mil vezes mais, etc.
+
+Ex.: Prefiro mil vezes dançar a fazer ginástica.
+</cultura>
+
+<cultura titulo="SESSÃO PIPOCA">
 </cultura>
 
 
-<expediente titulo=”EXPEDIENTE:">
-        Chefe de Reportagem: Vileide
-        Diagramação: Vileide 
-        Programação: Evandro
-        Projeto Gráfico: Gustavo Cruz e Marco Souza
-        Conteúdo e Contribuições: Evandro, Livia, Taise, Vileide... 
- </expediente>
+<cultura subtitulo=' O Que os Homens Falam ★★★★'>
+        Sinopse: Oito homens enfrentam a crise de meia-idade neste filme de episódios. E. (Eduardo Fernandez), que perde tudo o que tem e volta a morar na casa da mãe, se encontra casualmente com um amigo de longa data, J. (Eduardo Sbaraglia), que conquista tudo o que deseja, mas fica deprimido. S. (Javier Camara) tenta retomar o casamento dois anos após o divórcio. G. (Ricardo Darín) confessa a L.(Luis Tosar) que desconfia que sua esposa o trai. P. (Eduardo Noriega) tenta seduzir uma colega de trabalho. Já A. (Alberto San Juan) e M. (Jordi Mollà) têm seus segredos íntimos revelados.
+        Fonte: http://www.adorocinema.com/filmes/filme-191049/
+</cultura>
+
+<cultura subtitulo=' O Tempero de Familia ★★★'>
+        Sinopse: Fanis  é um garoto grego que vive em Istambul, na Turquia. Seu avô, Vassilis , é um filósofo culinário que o ensina que tanto a comida quanto a vida precisam de um pouco de sal para ganhar sabor. Ao crescer Fanis  se torna um astrofísico, que usa seus dotes de culinária para temperar as vidas das pessoas que o cercam. Ao completar 35 anos ele decide deixar Atenas e retornar a Istambul, para reencontrar seu avô e também seu primeiro amor.
+        Fonte: http://www.adorocinema.com/filmes/filme-60086/
+</cultura>
+
+<cultura subtitulo=' Planeta dos Macacos: O Confronto ★★★★ '>
+        Sinopse: Quinze anos após a conquista da liberdade, César  e os demais macacos vivem em paz na floresta próxima a San Francisco. Lá eles desenvolveram uma comunidade própria, baseada no apoio mútuo, para que possam se manter. Enquanto isso, os humanos enfrentam uma das maiores epidemias de todos os tempos, causada por um vírus criado em laboratório, chamado vírus símio. Diante disto, um grupo de sobreviventes liderado por Dreyfus  deseja atacar os macacos para usá-los como cobaias na busca por uma vacina. Só que Malcolm, que conhece bem como os macacos vivem por ter conquistado a confiança de César, deseja impedir que o confronto aconteça.
+        Fonte: http://www.adorocinema.com/filmes/filme-206986/
+</cultura>
+
+<cultura subtitulo=' O Enigma Chinês ★★★'>
+Sinopse: Aos 40 anos, Xavier  está se separando de Wendy, com quem tem dois filhos. Ela decide se mudar para Nova York após conhecer John, levando consigo as crianças. Sem aguentar ficar longe dos filhos, Xavier logo resolve deixar Paris e também se mudar para Nova York. Lá ele fica temporariamente hospedado na casa de sua grande amiga Isabelle, que mantém um relacionamento amoroso com Ju e está grávida por inseminação artificial. Com o tempo, Xavier se adequa aos inevitáveis choques culturais e começa a criar uma rotina que lhe permita se manter economicamente, tendo que driblar a fiscalização do departamento de imigração, e ainda passar algum tempo com os filhos.
+  Fonte: http://www.adorocinema.com/filmes/filme-193911/
+</cultura>
+
+<cultura subtitulo=' Tarja Branca'>
+  Sinopse: A partir dos depoimentos de adultos de gerações, origens e profissões diferentes, o documentário discorre sobre a pluralidade do ato de brincar, e como o homem pode se relacionar com a criança que mora dentro dele. Por meio de reflexões, o filme mostra as diferentes formas de como a brincadeira, ação tão primordial à natureza humana, pode estar interligada com o comportamento do homem contemporâneo e seu "espírito lúdico".
+  Fonte: http://www.adorocinema.com/filmes/filme-229187/
+</cultura>
+
+<cultura subtitulo='Antes do Inverno ★★★'>
+  Sinopse: Paul é um neurocirurgião de sessenta anos e é casado com Lucie. Um dia, buquês de rosa começam a ser deixados anonimamente na casa deles no momento em que Lou, uma moça de vinte anos, não para de cruzar o caminho de Paul. As máscaras começam a cair, as pessoas são realmente quem elas pretendem ser? A vida de Paul e Lucie é realmente a que eles sonharam? E será agora, justamente antes da velhice, o momento certo para revelar os não-ditos e os segredos?
+  Fonte: http://www.adorocinema.com/filmes/filme-212752/
+</cultura>
+
+<cultura subtitulo='O Doador de Memórias'>
+  Sinopse: Uma pequena comunidade vive em um mundo aparentemente ideal, sem doenças nem guerras, mas também sem sentimentos. Para tanto uma pessoa é encarregada a armazenar estas memórias, de formar a poupar os demais habitantes do sofrimento e também de guiá-los com sua sabedoria. De tempos em tempos esta tarefa muda de mãos e agora cabe a um jovem, que precisa passar por um duro treinamento para provar que é digno desta tarefa.
+  Fonte: http://www.adorocinema.com/filmes/filme-195540/
+</cultura>
+    
+<cultura subtitulo='Eu Vi o Diabo ("Akmareul boatda", Coreia do Sul, 2010)'>
+Sinopse: Existe um psicopata sanguinário à solta na Coréia do Sul. Jang Kyung-chul (Choi Min-sik) mata mulheres de forma brutal. A polícia tenta capturá-lo há décadas, sem sucesso. Quando a noiva de Soo-hyun (Byung-hun Lee), um agente secreto, é assassinada por este homem, o agente decide procurar sozinho pelo responsável. O encontro entre os dois homens ocorre rapidamente, mas Soo-hyun decide que a morte não é suficiente: será preciso torturá-lo, muitas vezes, para que o outro aprenda todo o mal que causou. Dirigido por Jee-woon Kim.
+Fonte: Existe um psicopata sanguinário à solta na Coréia do Sul. Jang Kyung-chul (Choi Min-sik) mata mulheres de forma brutal. A polícia tenta capturá-lo há décadas, sem sucesso. Quando a noiva de Soo-hyun (Byung-hun Lee), um agente secreto, é assassinada por este homem, o agente decide procurar sozinho pelo responsável. O encontro entre os dois homens ocorre rapidamente, mas Soo-hyun decide que a morte não é suficiente: será preciso torturá-lo, muitas vezes, para que o outro aprenda todo o mal que causou. Dirigido por Jee-woon Kim.
+Fonte: Blog "Eu e a Telona" (http://eueatelona.blogspot.com.br/2014/07/eu-vi-o-diabo-coreia-do-sul-2010.html)
+</cultura>
+
+<cultura subtitulo='O Homem Duplicado (“Enemy”, 2013)'>
+Sinopse: Ao assistir um filme, Adam (Jake Gyllenhaal), um professor universitário, se dá conta que um dos atores é idêntico a ele. Intrigado com a estranha coincidência, ele passa a perseguir obsessivamente este homem a fim de desvendar o mistério. Dirigido por Denis Villeneuve.
+Fonte: Blog "Eu e a Telona" (http://eueatelona.blogspot.com.br/2014/07/o-homem-duplicado-enemy-2013.html)
+</cultura>
+
+<expediente titulo="EXPEDIENTE:">
+        Chefe de Reportagem: Vileide.
+        Diagramação: Vileide.
+        Programação: Evandro.
+        Projeto Gráfico: Gustavo Cruz e Marco Souza.
+        Conteúdo e Contribuições: Arilson, Carlile, Denise, Evandro, Ivan, Jamil, Leticia, Livia Embiruçu, Lucas Rego, Luis Henrique, Sandro Almeida, Taise, Toninho (Antonio Rosa), Vanderlei e Vileide.
+</expediente>
 </boletim>
+
 

@@ -19,13 +19,12 @@ meses['10']="outubro"
 meses['11']="novembro"
 meses['12']="dezembro"
 
-
 def br(text)
   return "" if ! filled? (text)
   text = text.gsub(/\r/,"")
   text = text.gsub(/^ */,"")  
-  text = text.gsub(/^\n*/,"")
-  text = text.gsub(/\n/,"<BR>")
+  # text = text.gsub(/^\n*/,"")
+  text = text.gsub(/\n/,"<br>")
 end
 
 def fix(text)
@@ -69,11 +68,23 @@ def r(v)
   return v
 end
 
+def translate_tags(text)
+  return "" if ! filled? (text)
+  text = text.gsub(/\[/,'<')
+  text = text.gsub(/\]/,'>')  
+end
+
+def to_html(text)
+   text = br(text)
+   text = translate_tags(text)
+end
+
+#Render with auto line break
 def rb(v, sec)
   sec = Array.new if ! filled? sec
   h = Hash.new
   $doc.xpath(v).each do |n|
-     h = {:t=>br(n['titulo']), :st=>br(n['subtitulo']), :c=>br(n.content)} 
+     h = {:t=>to_html(n['titulo']), :st=>to_html(n['subtitulo']), :c=>to_html(n.content)} 
      sec.push(h)
   end
   return sec
@@ -98,20 +109,21 @@ mudancas = rb('//boletim/mudancas', mudancas)
 cultura = rb('//boletim/cultura', cultura)
 expediente = rb('//boletim/expediente', expediente)
 
-aniversariantes = csvToArray(clean(r('//boletim/aniversariantes')))
-ferias = csvToArray(clean(r('//boletim/ferias')))
 
+ferias = csvToArray(clean(r('//boletim/ferias')))
+if filled? ferias
+  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://www.sintetra.org.br/wp-content/uploads/2009/08/boas-ferias.jpg"></div>'
+  pessoas.push({:t=>"", :c=>feriasImg})
+  pessoas.push({:t=>"", :c=>buildLeave(meses[DateTime.now.strftime('%m')], ferias)})
+end
+
+aniversariantes = csvToArray(clean(r('//boletim/aniversariantes')))
 if filled? aniversariantes 
   boloImg='<div align="center"><img style="-webkit-user-select: none" src="http://www.brasilescola.com/upload/e/aniversario.jpg"></div>'
   pessoas.push({:t=>"", :c=>boloImg})
   pessoas.push({:t=>"", :c=>buildBirthdayGuys(meses[DateTime.now.strftime('%m')], aniversariantes)})
 end  
 
-if filled? ferias
-  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://rekoba.com.br/wp-content/uploads/2012/12/REKOBA-F%C3%89RIAS-2012.jpg"></div>'
-  pessoas.push({:t=>"", :c=>feriasImg})
-  pessoas.push({:t=>"", :c=>buildLeave(meses[DateTime.now.strftime('%m')], ferias)})
-end
 
 renderer = ERB.new(template)
 puts output = renderer.result()

@@ -192,7 +192,8 @@ p {
             <h3>#{p[:st]}</h3> " if ! p[:st].empty?
           c = "<p>#{p[:c]}</p>" if ! p[:c].empty?
           s+= t + c 
-          s+="<div align='center'>=======</div><br>" if ! p[:c].empty?
+          s+="<br></br>" if ! p[:c].empty?
+          #s+="<div align='center'>=======</div><br>" if ! p[:c].empty?
     }
   %>
   <% if !s.empty? %>
