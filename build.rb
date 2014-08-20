@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby 
-#encoding UTF-8
+# encoding: utf-8
 
 require 'erb'
 require 'csv'
@@ -19,6 +19,7 @@ meses['10']="outubro"
 meses['11']="novembro"
 meses['12']="dezembro"
 
+
 def br(text)
   return "" if ! filled? (text)
   text = text.gsub(/\r/,"")
@@ -30,6 +31,7 @@ end
 def fix(text)
   return "" if ! filled? (text)
   text = text.gsub(/”/,'"')
+  text = text.gsub(/“/,'"')
 end
 
 def clean(text)
@@ -112,7 +114,7 @@ expediente = rb('//boletim/expediente', expediente)
 
 ferias = csvToArray(clean(r('//boletim/ferias')))
 if filled? ferias
-  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://www.sintetra.org.br/wp-content/uploads/2009/08/boas-ferias.jpg"></div>'
+  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://voce.serpro/articles/0106/4943/boas-ferias.jpg"></div>'
   pessoas.push({:t=>"", :c=>feriasImg})
   pessoas.push({:t=>"", :c=>buildLeave(meses[DateTime.now.strftime('%m')], ferias)})
 end
