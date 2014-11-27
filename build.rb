@@ -76,13 +76,29 @@ def translate_tags(text)
   text = text.gsub(/\]/,'>')  
 end
 
-def to_html(text)
+def to_html_br(text)
    text = br(text)
    text = translate_tags(text)
 end
 
+def to_html(text)
+   text = translate_tags(text)
+end
+
+
 #Render with auto line break
 def rb(v, sec)
+  sec = Array.new if ! filled? sec
+  h = Hash.new
+  $doc.xpath(v).each do |n|
+     h = {:t=>to_html_br(n['titulo']), :st=>to_html_br(n['subtitulo']), :c=>to_html_br(n.content)} 
+     sec.push(h)
+  end
+  return sec
+end
+
+#Render without auto line necessary to use with tables
+def rraw(v, sec)
   sec = Array.new if ! filled? sec
   h = Hash.new
   $doc.xpath(v).each do |n|
@@ -101,7 +117,7 @@ content = fix(content)
 
 $doc = doc = Nokogiri::XML(content)
 boletimNumero = doc.xpath('//boletim')[0]['numero']
-editorial=rb('//boletim/editorial', editorial)
+editorial=rraw('//boletim/editorial', editorial)
 servicos = rb('//boletim/servicos', servicos)
 eventos = rb('//boletim/eventos', eventos)
 pessoas = rb('//boletim/pessoas', pessoas)
@@ -114,7 +130,7 @@ expediente = rb('//boletim/expediente', expediente)
 
 ferias = csvToArray(clean(r('//boletim/ferias')))
 if filled? ferias
-  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://voce.serpro/articles/0106/4943/boas-ferias.jpg"></div>'
+  feriasImg='<div align="center"><img width="50%" style="-webkit-user-select: none" src="http://voce.serpro/thumbnails/public/0106/8815/boas-ferias_display.jpg"></div>'
   pessoas.push({:t=>"", :c=>feriasImg})
   pessoas.push({:t=>"", :c=>buildLeave(meses[DateTime.now.strftime('%m')], ferias)})
 end
