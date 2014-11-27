@@ -45,6 +45,8 @@ p {
 <p>Salvador, <%= dataPorExtenso %> - Boletim Informativo DESDR <%= boletimNumero %><p>
 <img title="Boletim" class="imgLinha" src="http://publicaintra7.serpro/clientes/supde/supde/cabecalho.png" alt="Boletim" />
 <br>
+<br>
+<br>
 <!-- Editorial -->
 
 <% if !editorial.empty? %>
@@ -194,7 +196,7 @@ p {
           t = "    
             <h2>#{p[:t]}</h2> " if ! p[:t].empty?
           t = "    
-            <h3>#{p[:st]}</h3> " if ! p[:st].empty?
+            <BR><h3>#{p[:st]}</h3> " if ! p[:st].empty?
           c = "<p>#{p[:c]}</p>" if ! p[:c].empty?
           s+= t + c 
           s+="<br></br>" if ! p[:c].empty?
@@ -211,6 +213,7 @@ p {
 <!-- Expediente --> 
 
 <% if filled? expediente %>
+  <BR>
   <div class="caixa">
   <% s=""
       expediente.each { |p|  
